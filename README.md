@@ -1,82 +1,52 @@
-**📊 Blinkit Sales Performance Analysis – Power BI Dashboard**
+# 📊 Blinkit Sales Performance Analysis – Power BI Dashboard  
+A complete end-to-end data analytics case study analyzing Blinkit's grocery sales using Power BI, DAX, & Power Query.
 
-A Complete End-to-End Data Analytics Case Study
+![Power BI](https://img.shields.io/badge/PowerBI-Dashboard-F2C811?logo=powerbi&logoColor=black)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![Made With](https://img.shields.io/badge/Made%20With-Power%20Query%20%7C%20DAX%20%7C%20Power%20BI-blue)
 
-**🚀 Project Overview**
+---
 
-This project presents an interactive Power BI dashboard analyzing Blinkit grocery sales across outlets, product categories, and customer preferences.
-It highlights key performance metrics, sales trends, item category contributions, and outlet-level insights to support strategic business decisions.
+## 🚀 Project Overview  
+This project presents an interactive **Power BI dashboard** analyzing Blinkit’s sales across outlet types, item categories, fat content groups, and customer ratings.
 
-The project demonstrates strong capabilities in:
+It highlights:
 
-**Data Cleaning & Preparation**
+- Key KPIs  
+- Sales trends  
+- Category performance  
+- Outlet performance  
+- Consumer preferences  
+- Actionable insights & recommendations  
 
-Data Modeling
+This project showcases skills in **data cleaning, modeling, visualization, DAX, and business analysis.**
 
-DAX Calculations
+---
 
-Dashboard Design
+## 🎯 Business Questions Answered  
+- Which item categories contribute most to sales?  
+- Which outlet locations (Tier 1/2/3) perform best?  
+- Do Low Fat or Regular products impact sales differently?  
+- What is the trend of sales over the years?  
+- What outlets or categories underperform?  
+- What business improvements can be recommended?
 
-Business Insight Generation
+---
 
-Storytelling with Data
+## 🧹 Data Cleaning & Preparation  
+Performed using **Power Query**:
 
-**🎯 Business Problem**
+- Removed duplicates & missing values  
+- Cleaned inconsistent labels (Low Fat, Regular)  
+- Corrected data types  
+- Cleaned Outlet Size & Location Tier fields  
+- Prepared a clean analysis-ready dataset  
 
-Blinkit wants to understand what drives its sales performance across:
+---
 
-Outlet types & sizes
+## 📐 Data Modeling (DAX Measures)
 
-City tiers
-
-Product categories
-
-Fat content groups
-
-Customer ratings
-
-The objective is to uncover insights that help improve inventory planning, store strategy, promotions, and customer satisfaction.
-
-**❓ Key Business Questions**
-
-This dashboard answers:
-
-Which item categories contribute most to total sales?
-
-Which outlet locations (Tier 1/2/3) are the highest revenue generators?
-
-Do Low Fat vs Regular Fat items influence sales performance?
-
-What is the historical trend of sales over years?
-
-Which outlets or categories underperform?
-
-What business actions should Blinkit take?
-
-**🧹 Data Cleaning & Preparation**
-
-Performed using Power Query:
-
-Removed duplicates and handled missing values
-
-Standardized categories (Low Fat, Regular)
-
-Fixed inconsistent formatting and data types
-
-Cleaned Outlet Size and Location classifications
-
-Built a clean model for analysis
-
-**📐 Data Modeling**
-
-A simple, analysis-friendly model was used:
-
-Fact Table: Item-Outlet Sales
-
-Dimensions: Item Type, Fat Content, Outlet Size, Outlet Type, Location Type, Year
-
-**🔢 DAX Measures Used**
-
+```DAX
 Total Sales = SUM('BlinkIT Grocery Data'[Item_Outlet_Sales])
 
 Avg Sales = AVERAGE('BlinkIT Grocery Data'[Item_Outlet_Sales])
@@ -85,26 +55,26 @@ No of Items Sold = SUM('BlinkIT Grocery Data'[Quantity])
 
 Avg Rating = AVERAGE('BlinkIT Grocery Data'[Rating])
 
-Contribution % = DIVIDE([Total Sales], CALCULATE([Total Sales], ALL('BlinkIT Grocery Data')))
+Contribution % = 
+DIVIDE([Total Sales], CALCULATE([Total Sales], ALL('BlinkIT Grocery Data')))
 
-Rating Weighted Sales = SUMX('BlinkIT Grocery Data', 'BlinkIT Grocery Data'[Item_Outlet_Sales] * 'BlinkIT Grocery Data'[Rating])
+Rating Weighted Sales =
+SUMX('BlinkIT Grocery Data', 'BlinkIT Grocery Data'[Item_Outlet_Sales] * 'BlinkIT Grocery Data'[Rating])
 
-**📊 Dashboard Preview**
 
-🟨 Complete Dashboard Overview
+**📊 Dashboard Overview**
 
-<img src="assets/Blinkit screenshot.png" width="800"/>
-
+🟨 Full Dashboard Screenshot
+<img src="assets/A Blinkit screenshot.png" width="900"/>
 **🔍 Close-Up Insights**
 
 **⭐ 1. KPI Insights**
 
-<img src="assets/KPI.png" width="700"/>
+<img src="assets/KPI.png" width="500"/>
 
 **Insights**
 
 Total Sales: $1.20M+
-
 Average Sales per item: $141
 
 Total Items Sold: 8,500+
@@ -236,12 +206,12 @@ Blinkit-Sales-Analysis/
 ├── Blinkit_Project_Report.pdf
 ├── README.md
 └── assets/
-      ├── A Blinkit screenshot.png
-      ├── A KPI.png
-      ├── A fat_content.png
-      ├── A item_type.png
-      ├── A fat_by_outlet.png
-      └── A outlet_establishment.png
+      ├──  Blinkit screenshot.png
+      ├──  KPI.png
+      ├──  fat_content.png
+      ├──  item_type.png
+      ├──  fat_by_outlet.png
+      └──  outlet_establishment.png
 
 
 
