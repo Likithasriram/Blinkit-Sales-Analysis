@@ -113,7 +113,7 @@ Average Rating: 3.92
 
 **⭐ 2. Item Type Insights**
 
-<img src="assets/A item_type.png" width="650"/>
+<img src="assets/A item_type.png" width="500"/>
 
 **Insights**
 
@@ -135,7 +135,7 @@ Strong customer preference for Low Fat categories
 
 **⭐ 4. Fat by Outlet Tier**
 
-<img src="assets/A fat_by_outlet.png" width="550"/>
+<img src="assets/A fat_by_outlet.png" width="500"/>
 
 **Insights**
 
@@ -145,7 +145,7 @@ Both Low Fat & Regular products sell highest in Tier 3
 
 **⭐ 5. Sales Trend Over Time**
 
-<img src="assets/A outlet_establishment.png" width="650"/>
+<img src="assets/A outlet_establishment.png" width="500"/>
 
 **Insights**
 
