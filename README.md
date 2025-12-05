@@ -89,7 +89,7 @@ Average Rating: 3.92
 
 **⭐ 2. Item Type Insights**
 
-<img src="assets/item_type.png" width="500"/>
+<img src="assets/item_type.png" width="300"/>
 
 **Insights**
 
@@ -101,7 +101,7 @@ Seafood, Breakfast, Hard Drinks underperform
 
 **⭐ 3. Fat Content Insights**
 
-<img src="assets/fat_content.png" width="450"/>
+<img src="assets/fat_content.png" width="350"/>
 
 **Insights**
 
@@ -111,7 +111,7 @@ Strong customer preference for Low Fat categories
 
 **⭐ 4. Fat by Outlet Tier**
 
-<img src="assets/fat_by_outlet.png" width="500"/>
+<img src="assets/fat_by_outlet.png" width="300"/>
 
 **Insights**
 
