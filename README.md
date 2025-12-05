@@ -44,9 +44,9 @@ Performed using **Power Query**:
 
 ---
 
-## 📐 Data Modeling (DAX Measures)
+## 🔢 Key DAX measures (copy into Power BI)
 
-```DAX
+-- Basic KPIs
 Total Sales = SUM('BlinkIT Grocery Data'[Item_Outlet_Sales])
 
 Avg Sales = AVERAGE('BlinkIT Grocery Data'[Item_Outlet_Sales])
@@ -55,17 +55,23 @@ No of Items Sold = SUM('BlinkIT Grocery Data'[Quantity])
 
 Avg Rating = AVERAGE('BlinkIT Grocery Data'[Rating])
 
-Contribution % = 
+-- Contribution %
+Contribution % =
 DIVIDE([Total Sales], CALCULATE([Total Sales], ALL('BlinkIT Grocery Data')))
 
+-- Weighted revenue by rating (example)
 Rating Weighted Sales =
-SUMX('BlinkIT Grocery Data', 'BlinkIT Grocery Data'[Item_Outlet_Sales] * 'BlinkIT Grocery Data'[Rating])
+SUMX(
+  'BlinkIT Grocery Data',
+  'BlinkIT Grocery Data'[Item_Outlet_Sales] * 'BlinkIT Grocery Data'[Rating])
+
 ---
 
 **📊 Dashboard Overview**
 
 🟨 Full Dashboard Screenshot
 <img src="assets/A Blinkit screenshot.png" width="900"/>
+
 **🔍 Close-Up Insights**
 
 **⭐ 1. KPI Insights**
@@ -186,7 +192,7 @@ Data Visualization
 **📥 How to Use This Project**
 
 1️⃣ Clone or download the repository
-git clone https://github.com/yourusername/Blinkit-Sales-Analysis.git
+git clone https://github.com/Likithasriram/Blinkit-Sales-Analysis.git
 
 2️⃣ Open the .pbix file in Power BI Desktop
 
