@@ -44,7 +44,7 @@ Performed using **Power Query**:
 
 ---
 
-## 🔢 Key DAX measures (copy into Power BI)
+## 🔢 Key DAX measures 
 
 -- Basic KPIs
 Total Sales = SUM('BlinkIT Grocery Data'[Item_Outlet_Sales])
@@ -192,7 +192,7 @@ Data Visualization
 **📥 How to Use This Project**
 
 1️⃣ Clone or download the repository
-git clone https://github.com/Likithasriram/Blinkit-Sales-Analysis.git
+git clone: https://github.com/Likithasriram/Blinkit-Sales-Analysis.git
 
 2️⃣ Open the .pbix file in Power BI Desktop
 
