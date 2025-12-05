@@ -60,7 +60,7 @@ DIVIDE([Total Sales], CALCULATE([Total Sales], ALL('BlinkIT Grocery Data')))
 
 Rating Weighted Sales =
 SUMX('BlinkIT Grocery Data', 'BlinkIT Grocery Data'[Item_Outlet_Sales] * 'BlinkIT Grocery Data'[Rating])
-
+---
 
 **📊 Dashboard Overview**
 
