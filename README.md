@@ -245,5 +245,6 @@ Blinkit-Sales-Analysis/
 
 Likhitha P
 Data Analyst | Power BI | SQL | Excel | Python
+
 📩 Email: likithasriramp@gmail.com
 🔗 LinkedIn: www.linkedin.com/in/likitha-sriram1220
