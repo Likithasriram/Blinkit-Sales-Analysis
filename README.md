@@ -93,13 +93,13 @@ Rating Weighted Sales = SUMX('BlinkIT Grocery Data', 'BlinkIT Grocery Data'[Item
 
 🟨 Complete Dashboard Overview
 
-<img src="assets/A Blinkit screenshot.png" width="900"/>
+<img src="assets/Blinkit screenshot.png" width="800"/>
 
 **🔍 Close-Up Insights**
 
 **⭐ 1. KPI Insights**
 
-<img src="assets/A KPI.png" width="700"/>
+<img src="assets/KPI.png" width="700"/>
 
 **Insights**
 
@@ -113,7 +113,7 @@ Average Rating: 3.92
 
 **⭐ 2. Item Type Insights**
 
-<img src="assets/A item_type.png" width="500"/>
+<img src="assets/item_type.png" width="500"/>
 
 **Insights**
 
@@ -125,7 +125,7 @@ Seafood, Breakfast, Hard Drinks underperform
 
 **⭐ 3. Fat Content Insights**
 
-<img src="assets/A fat_content.png" width="450"/>
+<img src="assets/fat_content.png" width="450"/>
 
 **Insights**
 
@@ -135,7 +135,7 @@ Strong customer preference for Low Fat categories
 
 **⭐ 4. Fat by Outlet Tier**
 
-<img src="assets/A fat_by_outlet.png" width="500"/>
+<img src="assets/fat_by_outlet.png" width="500"/>
 
 **Insights**
 
@@ -145,7 +145,7 @@ Both Low Fat & Regular products sell highest in Tier 3
 
 **⭐ 5. Sales Trend Over Time**
 
-<img src="assets/A outlet_establishment.png" width="500"/>
+<img src="assets/outlet_establishment.png" width="500"/>
 
 **Insights**
 
@@ -154,6 +154,7 @@ Sales show consistent growth over years
 Major peaks in 2017 and 2020
 
 **💡 Key Insights (Summary)**
+
 **🔸 Sales Trends**
 
 Clear growth trend with peaks in 2017 & 2020.
