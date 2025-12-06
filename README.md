@@ -43,9 +43,9 @@ Performed using **Power Query**:
 - Prepared a clean analysis-ready dataset  
 
 ---
+## 🔢 Key DAX Measures
 
-## 🔢 Key DAX measures 
-
+```DAX
 -- Basic KPIs
 Total Sales = SUM('BlinkIT Grocery Data'[Item_Outlet_Sales])
 
@@ -59,137 +59,134 @@ Avg Rating = AVERAGE('BlinkIT Grocery Data'[Rating])
 Contribution % =
 DIVIDE([Total Sales], CALCULATE([Total Sales], ALL('BlinkIT Grocery Data')))
 
--- Weighted revenue by rating (example)
+-- Weighted revenue by rating
 Rating Weighted Sales =
 SUMX(
   'BlinkIT Grocery Data',
-  'BlinkIT Grocery Data'[Item_Outlet_Sales] * 'BlinkIT Grocery Data'[Rating])
+  'BlinkIT Grocery Data'[Item_Outlet_Sales] * 'BlinkIT Grocery Data'[Rating]
+)
 
 ---
 
-**📊 Dashboard Overview**
+## 📊 Dashboard Overview
 
 🟨 Full Dashboard Screenshot
+
 <img src="assets/A Blinkit screenshot.png" width="900"/>
 
-**🔍 Close-Up Insights**
+## 🔍 Close-Up Insights
 
-**⭐ 1. KPI Insights**
+### ⭐ 1. KPI Insights
 
 <img src="assets/KPI.png" width="500"/>
 
 **Insights**
+- Total Sales: **$1.20M+**
+- Average Sales per Item: **$141**
+- Total Items Sold: **8,500+**
+- Average Rating: **3.92**
 
-Total Sales: $1.20M+
-Average Sales per item: $141
 
-Total Items Sold: 8,500+
-
-Average Rating: 3.92
-
-**⭐ 2. Item Type Insights**
+###⭐ 2. Item Type Insights
 
 <img src="assets/item_type.png" width="300"/>
 
 **Insights**
+- **Fruits & Vegetables** and **Snacks** generate the highest revenue.
+- **Household** and **Frozen Foods** show strong performance.
+- **Seafood**, **Breakfast**, and **Hard Drinks** are the lowest-performing categories.
+- Consider targeted marketing or repositioning for underperforming categories.
 
-Fruits & Vegetables and Snacks dominate revenue
-
-Household, Frozen Foods also perform strongly
-
-Seafood, Breakfast, Hard Drinks underperform
-
-**⭐ 3. Fat Content Insights**
+###⭐ 3. Fat Content Insights
 
 <img src="assets/fat_content.png" width="350"/>
 
 **Insights**
+- **Low Fat** items contribute the majority of revenue.
+- Clear customer preference for Low Fat products.
+- Regular products show lower overall performance but still contribute meaningfully.
+- Opportunity exists for promotions on Regular products to increase balance.
 
-Low Fat items contribute the majority of total revenue
 
-Strong customer preference for Low Fat categories
-
-**⭐ 4. Fat by Outlet Tier**
+###⭐ 4. Fat by Outlet Tier
 
 <img src="assets/fat_by_outlet.png" width="300"/>
 
 **Insights**
+- **Tier 3** outlets outperform Tier 1 & Tier 2 in total sales.
+- Both **Low Fat** and **Regular** items sell highest in Tier 3 stores.
+- Tier 1 & Tier 2 outlets show lower conversion, indicating improvement potential.
+- Opportunity to expand product variety in Tier 3 stores for even higher gains.
 
-Tier 3 outlets outperform Tier 1 and Tier 2
 
-Both Low Fat & Regular products sell highest in Tier 3
-
-**⭐ 5. Sales Trend Over Time**
+###⭐ 5. Sales Trend Over Time
 
 <img src="assets/outlet_establishment.png" width="500"/>
 
 **Insights**
+- Sales show consistent year-over-year growth.
+- Revenue peaks appear in **2017** and **2020**.
+- Seasonal patterns suggest higher demand during festival periods.
+- Stable growth trend indicates strong customer retention and product acceptance.
 
-Sales show consistent growth over years
+## 💡 Key Insights (Summary)
 
-Major peaks in 2017 and 2020
+### 🔸 Sales Trends
+- Consistent upward sales trend, with major peaks in **2017** and **2020**.
 
-**💡 Key Insights (Summary)**
+### 🔸 Product Insights
+- **Low Fat** items dominate revenue.
+- Top-performing categories: **Fruits & Vegetables**, **Snacks**, **Household**.
+- Underperforming categories: **Seafood**, **Hard Drinks**, **Breakfast**.
 
-**🔸 Sales Trends**
+### 🔸 Outlet Insights
+- **Tier 3** outlets generate the highest sales.
+- Medium-sized outlets outperform small and large outlets.
 
-Clear growth trend with peaks in 2017 & 2020.
+### 🔸 Customer Behavior
+- Strong overall customer satisfaction with an average rating of **3.92**.
 
-**🔸 Product Insights**
 
-Low Fat items dominate sales.
+## 🧭 Recommendations
+- ✔ **Expand in Tier 3 locations** — strongest revenue potential.
+- ✔ **Focus on medium-sized outlets** — best performance for scaling.
+- ✔ **Promote Low Fat products** — high demand; ideal for bundles or discounts.
+- ✔ **Improve low-performing categories** — use marketing offers or repositioning.
+- ✔ **Enhance customer experience** — improve service in lower-rated stores.
 
-Top categories: Fruits & Vegetables, Snacks, Household.
+## 📝 Project Summary
 
-Least performing: Seafood, Hard Drinks, Breakfast.
+This project provides a complete sales performance analysis for Blinkit using Power BI.  
+It covers data cleaning, modeling, and visualization to uncover trends across product categories, outlet tiers, fat content, and customer ratings.  
+Interactive dashboards enable business users to identify top-performing segments, understand customer behavior, and make data-driven decisions.
 
-**🔸 Outlet Insights**
+The project demonstrates strong analytical thinking, dashboard storytelling, and end-to-end BI development — from raw data to actionable insights.
 
-Tier 3 outlets deliver the highest sales.
+## 🛠 Tools & Technologies
 
-Medium-sized outlets outperform other sizes.
+- **Power BI Desktop**
+- **Power Query** (Data Cleaning & Transformation)
+- **DAX** (Measure Creation & KPI Development)
+- **Excel** (Initial Data Exploration)
+- **Data Modeling** (Star Schema, Relationships)
+- **Data Visualization & Storytelling**
 
-**🔸 Customer Behavior**
 
-Overall customer ratings are strong at 3.92.
+## 🧠 Skills Demonstrated
 
-**🧭 Recommendations**
+- ✔ Data Cleaning & Transformation (Power Query)
+- ✔ Data Modeling & Relationship Design
+- ✔ DAX Measure Creation (KPIs, Calculations, Contribution %)
+- ✔ Exploratory Data Analysis (EDA)
+- ✔ Power BI Dashboard Design & Layout Structuring
+- ✔ Advanced Data Visualization Techniques
+- ✔ Business Insight Extraction & Storytelling
+- ✔ KPI Tracking & Performance Analysis
+- ✔ Problem-Solving using Sales & Operations Data
+- ✔ End-to-End BI Project Development
 
-✔ 1. Expand in Tier 3 Locations
 
-Strongest revenue potential.
-
-✔ 2. Prioritize Medium-Sized Outlets
-
-Highest sales performance → suitable for expansion.
-
-✔ 3. Promote Low Fat Products
-
-High demand → highlight in app + discount bundles.
-
-✔ 4. Boost Performance of Low-Selling Categories
-
-Use offers, rebranding, repositioning.
-
-✔ 5. Improve Customer Experience
-
-Better service in lower-rated outlets can improve retention.
-
-**🛠 Tools & Technologies**
-
-Power BI Desktop
-
-Power Query
-
-DAX
-
-Excel
-
-Data Modeling
-
-Data Visualization
-
-**📥 How to Use This Project**
+##📥 How to Use This Project
 
 1️⃣ Clone or download the repository
 git clone: https://github.com/Likithasriram/Blinkit-Sales-Analysis.git
@@ -221,7 +218,7 @@ Blinkit-Sales-Analysis/
 
 
 
-**👤 Author**
+##👤 Author
 
 Likhitha P
 Data Analyst | Power BI | SQL | Excel | Python
