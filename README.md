@@ -43,16 +43,14 @@ Performed using **Power Query**:
 - Prepared a clean analysis-ready dataset  
 
 ---
-## 🔢 Key DAX Measures
+
+## Key DAX Measures
 
 ```DAX
 -- Basic KPIs
 Total Sales = SUM('BlinkIT Grocery Data'[Item_Outlet_Sales])
-
 Avg Sales = AVERAGE('BlinkIT Grocery Data'[Item_Outlet_Sales])
-
 No of Items Sold = SUM('BlinkIT Grocery Data'[Quantity])
-
 Avg Rating = AVERAGE('BlinkIT Grocery Data'[Rating])
 
 -- Contribution %
@@ -62,13 +60,13 @@ DIVIDE([Total Sales], CALCULATE([Total Sales], ALL('BlinkIT Grocery Data')))
 -- Weighted revenue by rating
 Rating Weighted Sales =
 SUMX(
-  'BlinkIT Grocery Data',
-  'BlinkIT Grocery Data'[Item_Outlet_Sales] * 'BlinkIT Grocery Data'[Rating]
+    'BlinkIT Grocery Data',
+    'BlinkIT Grocery Data'[Item_Outlet_Sales] * 'BlinkIT Grocery Data'[Rating]
 )
+```
+
 
 ---
-
-
 
 ## 📊 Dashboard Overview
 
