@@ -199,22 +199,23 @@ Make sure Power BI is updated.
 
 Filter by outlet size, item type, fat content, etc.
 
-## 📁 Project Files
+📁 **Project Files**
 
-
-
+```
 Blinkit-Sales-Analysis/
+│── Blinkit_Dashboard.pbix
+│── Blinkit_Project_Report.pdf
+│── README.md
 │
-├── Blinkit_Dashboard.pbix
-├── Blinkit_Project_Report.pdf
-├── README.md
 └── assets/
-      ├──  Blinkit screenshot.png
-      ├──  KPI.png
-      ├──  fat_content.png
-      ├──  item_type.png
-      ├──  fat_by_outlet.png
-      └──  outlet_establishment.png
+    │── Blinkit screenshot.png
+    │── KPI.png
+    │── fat_content.png
+    │── item_type.png
+    │── fat_by_outlet.png
+    └── outlet_establishment.png
+```
+
 
 
 
