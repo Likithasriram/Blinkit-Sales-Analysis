@@ -72,7 +72,7 @@ SUMX(
 
 🟨 Full Dashboard Screenshot
 
-<img src="assets/A Blinkit screenshot.png" width="900"/>
+<img src="assets/Blinkit_screenshot.png" width="900"/>
 
 ## 🔍 Close-Up Insights
 
