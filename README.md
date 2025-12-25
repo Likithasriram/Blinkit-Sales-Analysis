@@ -36,11 +36,12 @@ This project showcases skills in **data cleaning, modeling, visualization, DAX, 
 ## 🧹 Data Cleaning & Preparation  
 Performed using **Power Query**:
 
-- Removed duplicates & missing values  
-- Cleaned inconsistent labels (Low Fat, Regular)  
-- Corrected data types  
-- Cleaned Outlet Size & Location Tier fields  
-- Prepared a clean analysis-ready dataset  
+- Removed duplicate and missing records to ensure accurate sales totals
+- Standardized inconsistent categorical values (e.g., Fat Content, Outlet Tier)
+- Corrected data types for numeric and date fields
+- Cleaned outlet size and location fields for proper grouping and filtering
+- Validated cleaned data using summary checks before visualization
+ 
 
 ---
 
